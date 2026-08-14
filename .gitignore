@@ -99,3 +99,8 @@ assets/sample_data/rgb/train/annot_post/
 
 # Large generated failure-case diagnostics
 experiments/01_v1_bugged_logsumexp/system_eval_reports/failure_cases/
+
+# Local-only project materials
+Archive/
+GitHub SSH
+Project 1.pptx
