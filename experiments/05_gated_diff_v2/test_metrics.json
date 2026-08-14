@@ -1,0 +1,15 @@
+{
+    "mean_iou": 0.5007274150848389,
+    "per_class_iou": {
+        "background": 0.9888097047805786,
+        "minor": 0.13113705813884735,
+        "major": 0.4008786380290985,
+        "destroyed": 0.48208439350128174
+    },
+    "damage_only_stats": {
+        "total_patches": 696,
+        "gt_damage_patches": 428,
+        "percentage_gt_damage": 61.49425287356322,
+        "mean_damage_iou_gt_only": 0.33388839218117344
+    }
+}

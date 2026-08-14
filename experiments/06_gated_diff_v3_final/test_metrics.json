@@ -1,0 +1,16 @@
+{
+    "model": "dual_branch_diff_gated_v3",
+    "mean_iou": 0.5135666131973267,
+    "per_class_iou": {
+        "background": 0.9886888265609741,
+        "minor": 0.16854968667030334,
+        "major": 0.39710521697998047,
+        "destroyed": 0.4999227225780487
+    },
+    "damage_only_stats": {
+        "total_patches": 696,
+        "gt_damage_patches": 428,
+        "percentage_gt_damage": 61.49425287356322,
+        "mean_damage_iou_gt_only": 0.3563643604814488
+    }
+}
