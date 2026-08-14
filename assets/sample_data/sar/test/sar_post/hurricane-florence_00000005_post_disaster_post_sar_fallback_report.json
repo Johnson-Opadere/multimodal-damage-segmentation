@@ -1,0 +1,12 @@
+{
+  "event": "hurricane-florence",
+  "prefix": "post",
+  "fallback_window_days": 60,
+  "fallback_tier": 2,
+  "polarizations": [
+    "VV",
+    "VH"
+  ],
+  "orbit": "ANY",
+  "num_acquisitions": 4
+}

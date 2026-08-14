@@ -1,0 +1,12 @@
+{
+  "event": "guatemala-volcano",
+  "prefix": "post",
+  "fallback_window_days": 60,
+  "fallback_tier": 1,
+  "polarizations": [
+    "VV",
+    "VH"
+  ],
+  "orbit": "DESCENDING",
+  "num_acquisitions": 4
+}
