@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "hurricane-matthew_00000337_post_disaster",
+"features": [
+{ "type": "Feature", "properties": { "feature_type": "building", "subtype": "no-damage", "uid": "de57441a-41cf-4fd5-a07e-ef52e89c18bd" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 517.404139391144327, 167.375552845742106 ], [ 528.377284627755216, 167.869366224170193 ], [ 528.154036184616871, 177.232349711368414 ], [ 517.004165385040551, 176.767498765480696 ], [ 517.404139391144327, 167.375552845742106 ] ] ] } }
+]
+}

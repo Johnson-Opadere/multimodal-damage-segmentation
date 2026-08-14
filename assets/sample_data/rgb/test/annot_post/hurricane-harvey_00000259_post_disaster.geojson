@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "hurricane-harvey_00000259_post_disaster",
+"features": [
+{ "type": "Feature", "properties": { "feature_type": "building", "subtype": "minor-damage", "uid": "c5bcca5f-cc89-4f90-920e-9743c58758a9" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 888.033156824521825, 126.255861589705702 ], [ 895.018648971746984, 131.494980703316912 ], [ 890.434419749019753, 137.170693070087992 ], [ 882.794037712344448, 131.931573961456593 ], [ 888.033156824521825, 126.255861589705702 ] ] ] } }
+]
+}

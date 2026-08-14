@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "guatemala-volcano_00000005_post_disaster",
+"features": [
+{ "type": "Feature", "properties": { "feature_type": "building", "subtype": "un-classified", "uid": "b991324d-19a4-4db5-8050-a791922b3fb7" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 820.828574232988672, 954.107373170243591 ], [ 814.050328246085542, 966.431456782489818 ], [ 807.272082261318815, 961.809925426769837 ], [ 814.05032824584805, 950.410148088421352 ], [ 820.828574232988672, 954.107373170243591 ] ] ] } }
+]
+}

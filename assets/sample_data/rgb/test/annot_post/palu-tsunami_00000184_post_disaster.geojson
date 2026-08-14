@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "palu-tsunami_00000184_post_disaster",
+"features": [
+{ "type": "Feature", "properties": { "feature_type": "building", "subtype": "no-damage", "uid": "6e006b46-d532-4789-9952-34efbc07b495" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 939.194061022815163, 676.736927128343268 ], [ 944.591249650422924, 685.616172930585208 ], [ 929.096095210187173, 694.669521594992602 ], [ 923.35070086619146, 685.96437864744064 ], [ 939.194061022815163, 676.736927128343268 ] ] ] } }
+]
+}
