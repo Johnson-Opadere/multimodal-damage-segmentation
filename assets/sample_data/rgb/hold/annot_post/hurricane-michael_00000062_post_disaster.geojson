@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "hurricane-michael_00000062_post_disaster",
+"features": [
+{ "type": "Feature", "properties": { "feature_type": "building", "subtype": "minor-damage", "uid": "07fedecf-85f5-42bd-a13b-ead8101214d5" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 629.759199575497405, 191.99704694926109 ], [ 660.142706118626165, 191.99704694926109 ], [ 659.027739022200194, 261.515637186326217 ], [ 631.711045225829935, 260.400670092148516 ], [ 630.038594584812699, 197.405029295087502 ], [ 629.759199575497405, 191.99704694926109 ] ] ] } }
+]
+}

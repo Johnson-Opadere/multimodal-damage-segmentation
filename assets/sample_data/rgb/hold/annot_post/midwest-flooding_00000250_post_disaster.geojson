@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "midwest-flooding_00000250_post_disaster",
+"features": [
+{ "type": "Feature", "properties": { "feature_type": "building", "subtype": "un-classified", "uid": "e49021d7-06e4-406b-8d55-f4dc7b09e037" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 30.940093335099359, 35.135991661649733 ], [ 46.00512757937544, 41.191186960735998 ], [ 43.92846208146058, 46.1751841571662 ], [ 28.452066922296378, 40.233031515882011 ], [ 30.940093335099359, 35.135991661649733 ] ] ] } }
+]
+}

@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "socal-fire_00000192_post_disaster",
+"features": [
+{ "type": "Feature", "properties": { "feature_type": "building", "subtype": "minor-damage", "uid": "ad5f12b2-92b1-4655-99fd-edfcdc30bc2d" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 314.274475579496197, 422.212722943779283 ], [ 331.927775142740984, 415.982146624755387 ], [ 335.562277994785973, 426.36644049013421 ], [ 317.649371084449115, 432.337409459015589 ], [ 314.274475579496197, 422.212722943779283 ] ] ] } },
+{ "type": "Feature", "properties": { "feature_type": "building", "subtype": "destroyed", "uid": "be0e2115-43c5-4d11-bc05-70f3fbed6e1c" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 96.713202954186897, 365.950547900459128 ], [ 105.055452601994006, 366.525960790386478 ], [ 104.073221414198798, 383.547649268335192 ], [ 95.934380916469337, 383.084632770911298 ], [ 96.713202954186897, 365.950547900459128 ] ] ] } }
+]
+}

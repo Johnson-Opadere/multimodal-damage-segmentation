@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "socal-fire_00000069_post_disaster",
+"features": [
+{ "type": "Feature", "properties": { "feature_type": "building", "subtype": "minor-damage", "uid": "93071251-3330-42bf-8017-303cd1d116fc" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 216.579459919144909, 851.020569385636463 ], [ 218.110449758225911, 860.053409426067788 ], [ 208.924510738234886, 859.747211459319601 ], [ 208.771411752953611, 850.714371418888277 ], [ 216.579459919144909, 851.020569385636463 ] ] ] } }
+]
+}

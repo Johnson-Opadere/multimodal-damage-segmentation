@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "hurricane-florence_00000206_post_disaster",
+"features": [
+{ "type": "Feature", "properties": { "feature_type": "building", "subtype": "minor-damage", "uid": "8943cd39-9660-47dc-92ad-6b53b4deb36e" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 519.02229854217012, 187.638130462311295 ], [ 521.122699484882787, 177.661225982086904 ], [ 530.679523779877286, 179.026486591427187 ], [ 528.404334148755652, 189.233469949091301 ], [ 519.02229854217012, 187.638130462311295 ] ] ] } },
+{ "type": "Feature", "properties": { "feature_type": "building", "subtype": "minor-damage", "uid": "392dcfa2-66f2-4a2d-a514-290197a1a3be" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 526.268681796964756, 198.46573747467599 ], [ 522.907638834002, 207.465835082882592 ], [ 513.655733985824099, 204.493647312374691 ], [ 516.859046148710604, 195.829694142806204 ], [ 526.268681796964756, 198.46573747467599 ] ] ] } }
+]
+}

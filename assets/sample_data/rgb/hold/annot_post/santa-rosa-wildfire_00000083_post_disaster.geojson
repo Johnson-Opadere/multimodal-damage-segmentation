@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "santa-rosa-wildfire_00000083_post_disaster",
+"features": [
+{ "type": "Feature", "properties": { "feature_type": "building", "subtype": "destroyed", "uid": "a80e3c1a-bac9-4873-ab3d-eb2a4096f4a7" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 492.257785483814018, 846.22002237368622 ], [ 504.84098603227892, 824.199421413081836 ], [ 531.159706990323457, 841.439090281701965 ], [ 517.817411601425761, 862.735473096219607 ], [ 492.257785483814018, 846.22002237368622 ] ] ] } }
+]
+}

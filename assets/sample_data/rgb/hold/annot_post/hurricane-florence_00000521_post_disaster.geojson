@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "hurricane-florence_00000521_post_disaster",
+"features": [
+{ "type": "Feature", "properties": { "feature_type": "building", "subtype": "major-damage", "uid": "7f98bad7-9812-48e9-bb90-7735fc9eba00" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 520.820914921035069, 54.710264115318182 ], [ 527.501518963617173, 53.342482247005393 ], [ 531.409467169831601, 68.974275056567237 ], [ 524.533465715906345, 70.537454335076035 ], [ 520.820914921035069, 54.710264115318182 ] ] ] } }
+]
+}
