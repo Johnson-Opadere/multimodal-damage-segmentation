@@ -1,0 +1,20 @@
+[
+    {
+        "batch_size": 1,
+        "mean_latency_ms": 131.7827636999209,
+        "std_latency_ms": 0.2532963272322079,
+        "throughput_imgs_per_sec": 7.588245776033913
+    },
+    {
+        "batch_size": 8,
+        "mean_latency_ms": 174.26566109994383,
+        "std_latency_ms": 0.17205126213243405,
+        "throughput_imgs_per_sec": 45.9069213607831
+    },
+    {
+        "batch_size": 16,
+        "mean_latency_ms": 342.74086280007396,
+        "std_latency_ms": 0.40486076682952227,
+        "throughput_imgs_per_sec": 46.68249904398778
+    }
+]
