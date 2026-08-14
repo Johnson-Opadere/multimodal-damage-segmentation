@@ -15,6 +15,55 @@ with RGB + SAR Temporal Fusion
 
 ---
 
+---
+
+# Project Overview
+
+This project develops an end-to-end multimodal deep learning system for
+post-disaster building damage segmentation using pre- and post-event
+RGB satellite imagery together with Sentinel-1 SAR data.
+
+The core challenge is to identify not only where buildings are damaged,
+but also their damage severity under difficult conditions where optical
+imagery alone may be limited by appearance changes, vegetation, flooding,
+or other scene variability.
+
+The final architecture, **Gated DIFF v3**, uses dual ResNet50 encoders,
+explicit pre/post temporal differencing, and context-aware gated multimodal
+fusion to combine RGB and SAR information across multiple feature scales.
+A UNet-style decoder produces pixel-wise predictions for four classes:
+
+- Background
+- Minor damage
+- Major damage
+- Destroyed
+
+The project covers the complete ML pipeline:
+
+**multimodal data acquisition → preprocessing and alignment → TFRecord
+construction → damage-aware training → temporal fusion modeling →
+segmentation evaluation → qualitative analysis → system benchmarking**
+
+### Final Results
+
+| Metric | Gated DIFF v3 |
+|---|---:|
+| Test mIoU | **0.5136** |
+| Damage IoU (GT-only) | **0.3564** |
+| GPU Latency (batch=1) | **33.75 ms** |
+| Throughput | **35.53 images/s** |
+| Peak GPU Memory | **1.25 GB** |
+
+Compared with the previous Gated DIFF v2 architecture, the final model
+improves segmentation accuracy while reducing GPU inference latency from
+approximately **2.39 s to 33.75 ms (~70× faster)**.
+
+The resulting system demonstrates how explicit temporal reasoning,
+multimodal RGB–SAR fusion, and architecture-level efficiency optimization
+can be combined for practical disaster-response perception.
+
+---
+
 # Dataset & Data Sources
 
 ![Data Pipeline](assets/Data_pipeline.png)
