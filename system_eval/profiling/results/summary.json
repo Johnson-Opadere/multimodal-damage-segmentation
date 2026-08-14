@@ -1,0 +1,106 @@
+{
+    "project": "Multimodal Disaster Damage Segmentation",
+    "hardware": {
+        "gpu": "NVIDIA A10G (AWS g5.2xlarge)",
+        "cpu": "AWS EC2 g5.2xlarge",
+        "framework": "TensorFlow",
+        "precision": "FP32"
+    },
+    "provenance": {
+        "generated_at": "2026-04-07T17:42:22.248568Z",
+        "v2_model_path": "experiments_v2/dual_branch_diff_gated_v2_20260405-204616/best_model.keras",
+        "v3_model_path": "experiments_v2/dual_branch_diff_gated_v3_20260406-224335/best_model.keras",
+        "data_split": "tfrecords_v2/test/raw",
+        "input_shape": [
+            512,
+            512,
+            22
+        ]
+    },
+    "models": {
+        "v2": {
+            "accuracy": {
+                "test_miou": 0.5007274150848389,
+                "damage_iou": 0.33388839218117344
+            },
+            "system_metrics": {
+                "model_size_mb": 4781.77,
+                "gpu_latency_batch1_ms": 2389.85,
+                "gpu_latency_batch4_ms": 9754.63,
+                "gpu_latency_std_ms": null,
+                "cpu_latency_ms": 2839.03,
+                "cpu_latency_std_ms": null,
+                "throughput_img_per_sec": 0.41,
+                "peak_gpu_memory_mb": 4648.91
+            }
+        },
+        "v3": {
+            "accuracy": {
+                "test_miou": 0.5135666131973267,
+                "damage_iou": 0.3563643604814488
+            },
+            "system_metrics": {
+                "model_size_mb": 1069.57,
+                "gpu_latency_batch1_ms": 33.75,
+                "gpu_latency_batch4_ms": 112.58,
+                "gpu_latency_std_ms": 0.12,
+                "cpu_latency_ms": 1487.52,
+                "cpu_latency_std_ms": 14.78,
+                "throughput_img_per_sec": 35.53,
+                "peak_gpu_memory_mb": 1247.9
+            }
+        }
+    },
+    "improvements": {
+        "accuracy_gain_miou": 0.0128,
+        "damage_iou_gain": 0.0225,
+        "latency_speedup_gpu": 70.81,
+        "throughput_gain": 86.66,
+        "model_size_reduction": 4.47,
+        "memory_reduction": 3.73,
+        "cpu_speedup": 1.91
+    },
+    "interpretation": {
+        "summary": "v3 dominates v2 across both accuracy and system performance.",
+        "key_takeaways": [
+            "Accuracy improved (+0.0128 mIoU, +0.0225 damage IoU).",
+            "GPU latency reduced ~70.81\u00d7 (2.39s \u2192 33.75ms \u2248 29.6 FPS), enabling real-time inference.",
+            "Throughput increased ~86.66\u00d7.",
+            "Model size reduced ~4.47\u00d7.",
+            "GPU memory reduced ~3.73\u00d7.",
+            "CPU improved ~1.91\u00d7 but remains non-real-time."
+        ],
+        "deployment_decision": "Use v3 on GPU for real-time serving; CPU as fallback only.",
+        "real_time_definition": {
+            "target_fps": 30,
+            "achieved_latency_ms": 33.75,
+            "achieved_fps": 29.63,
+            "status": "Real-time capable (~30 FPS on NVIDIA A10G)"
+        },
+        "bottleneck_analysis": {
+            "v2": "Compute-bound due to overparameterized gating and feature explosion.",
+            "v3": "Improved efficiency via channel compression and streamlined gating.",
+            "cpu_vs_gpu": "GPU benefits from parallelism; CPU remains compute/memory bound."
+        },
+        "serving_recommendation": {
+            "primary": "GPU deployment on AWS g5 instances for real-time inference",
+            "fallback": "CPU deployment for batch/offline processing only",
+            "scaling": "Horizontal scaling using multiple GPU instances or batching"
+        },
+        "limitations": [
+            "CPU inference latency (~1.5s) is not suitable for real-time applications",
+            "Minor damage class remains comparatively harder",
+            "Performance tied to 512x512 resolution"
+        ],
+        "future_work": [
+            "TensorRT / quantization for further latency reduction",
+            "Edge deployment exploration",
+            "Improve minor damage class performance"
+        ]
+    },
+    "final_selection": {
+        "chosen_model": "v3",
+        "reason": "Higher accuracy with dramatically improved latency, memory, and model size",
+        "deployment": "Real-time GPU deployment"
+    }
+}
